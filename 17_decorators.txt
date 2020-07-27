@@ -1,0 +1,9 @@
+Chapter 17: Decorators
+
+Decorators - higher order functions (take in a function and return a function)
+
+Use :
+import functools
+
+@functools.wraps(func) above the wrapper - allows func to keep name and docstring
+*args,**kwargs to keep functions generic
