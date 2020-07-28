@@ -1,2 +1,2 @@
 # Python for devolopment learing
-OOP courses, development and projects
+OOP courses,algorithms & data structures,d projects

@@ -1,0 +1,35 @@
+Chapter 14: Python terminal and console
+
+Console:
+-Text interface to your computer
+-Anything that doesnt have a GUI
+
+The PATH:
+-Global variable that your OS specifies locations of programs
+
+Environment variables:
+-global variables available to all programs that run in the environment\
+
+PIP:
+-command that installs python packages
+
+New Virtual Env:
+-Install virtualenv
+-venv --python=python3.7
+
+Activate venv
+
+Command Line
+Linux / Windows
+pwd / chdir - current folder
+cd /  cd- change directory
+ls / dir - contents of current folder
+rm -rf/rmdir /Q /S or del- remove directory
+cat / Type -contents of a file
+
+Pipenv
+-pip install pipenv
+-pipenv install - will create pipfile and pipfile.lock / take requirements from txt file
+
+
+

@@ -1,0 +1,41 @@
+Chapter 7: Databases
+-A place where we can store data
+-Organised into tables with an id
+-SQLite can run in memory or as a single file (good for single user)
+-SQL (structured query language)
+-Only one person can write to the file at a time
+-hhtp://sqlitebrowser.org
+
+-.py :
+import sqlite3
+connection = sqlite3.connect('data.db')
+connection.close()
+
+CURSOR
+- all operations in SQLite made by cursors
+-cursor points to a place in database starting at the top
+-reading row moves down one
+
+COMMIT()
+-save result of the query to disk
+-can commit multiple things at once
+
+cursor = connection.cursor()
+cursor.execute('CREATE TABLE IF NOT EXISTS books(name text primary key, author text, read integer)'
+connection.commit()
+connection.close()
+
+INSERT INTO books VALUES(?, ?,0)
+SELECT * ,id,name FROM people
+books = cursor.fetchall()
+
+#filtering else whole column will be set/deleted
+UPDATE books SET name='Joseph' WHERE id=1
+DELETE FROM people WHERE id=1
+#conditional
+SELECT * FROM id WHERE amount > 150 OR type = 'online' != = AND
+SELECT * FROM books ORDER BY id DESC LIMIT 1
+
+##TYPE HINTING
+def create_book() -> None:
+    pass

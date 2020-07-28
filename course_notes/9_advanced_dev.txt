@@ -1,0 +1,33 @@
+Chapter 9: Advanced Python Development
+
+MUTABILITY
+- one that you can change after created
+
+id  = address of the object in memory
+
+when you change a value in an object, it will have the same id as you haven't created a new object.
+this is mutable
+
+int, str, float, tuples - immutable, they are unique
+
+- a function call occurs which changes self
+
+i = i +1 i.__add__(self,1): return cls(self.value + 1) - new object
+
+#Default Params
+- default params must follow non default
+i.e def add(num1: float, num2: float = 0) -> float:
+
+#Argument unpacking
+for t in transactions:
+    #add_balance(t[0], t[1])
+    add_balance(*t) -- unpacks in sequence
+
+- ** for dictionary unpacking
+    User(**data) for data in users
+
+QUEUES
+deque - double ended queue
+-can add/remove elements from both sides of object [1,2,3]
+-queue can add/remove elements from one side
+-stack add/remove from same end

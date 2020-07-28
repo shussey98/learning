@@ -1,0 +1,37 @@
+Chapter 8: Advanced built-in functions
+
+##Generators
+-remembers the state it is in
+
+GENERATOR CLASSES
+- must contain the __next__ method to be an iterator and must raise a stop iteration error
+example:
+class FirstHundredGenerator:
+    def __init__(self):
+        self.number = 0
+
+    def __next__(self):
+        if self.number<100:
+            current = self.number
+            self.number += 1
+            return current
+        else:
+            raise StopIteration()
+
+map(func, iterable)
+f for f in friends
+
+filter(func, iterable)
+f for f in friends if friends.startswith('A')
+
+any(bool(item)) - checks if truthy or falsey
+
+""" - Falsey - bool(0)
+0, 0.0, None, [], (), {}, False,
+"""
+
+all(items)
+checks if all the items are truthy
+
+all([1,2]) = True
+all([0,1]) = False

@@ -1,0 +1,31 @@
+Chapter 13: Asynchronous Python Development
+
+#Processes and Threads
+
+-Processor(CPU's) have cores - units that perform mathematical operation
+
+-Threads - Processes that we want to do that do not have the resources available (waiting)
+-A line of code execution
+-One thread can run in one core
+
+Threads run within a core
+
+-Process - has at least one thread + some resources from the OS + core
+This manages all the things needed for a thread to run
+
+Time Slicing
+-moving between waiting threads and running threads
+
+PYTHON GIL
+-Global Interpreter Lock
+Thread must aquire the GIL to run, then can release to another thread
+Each process creates its own GIL i.e pycharm + jupyterlab
+-Can only run one python script at a time as requires same resource
+
+Why threads?
+Reduces waiting time
+
+- Complex math operation
+- Short operation (input) - can take a long time if user types slowly
+-release GIL while waiting for user to type
+
