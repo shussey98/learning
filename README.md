@@ -1,2 +1,2 @@
-# Python for devolopment learing
-OOP courses,algorithms & data structures, projects
+# Python learning for devolopment 
+Journey of enhancing pydev skills by OOP courses, understanding algorithms & data structures, small projects
